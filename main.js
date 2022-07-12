@@ -23,4 +23,3 @@ subbtn.addEventListener("click", () => {
     window.location.href = `${window.location.origin}submit.html`;
   }
 });
-
