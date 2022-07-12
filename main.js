@@ -21,6 +21,6 @@ subbtn.addEventListener("click", () => {
   if (ra == 0) {
     window.alert("Please Select a Rating");
   } else {
-    window.location.href = "Interactive-rating-component/submit.html";
+    window.location.href = `${window.location.href}submit.html`;
   }
 });
