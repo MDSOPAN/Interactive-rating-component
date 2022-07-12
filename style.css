@@ -81,6 +81,7 @@ html {
   font-family: "Overpass", sans-serif;
   background-color: var(--vdblue);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -144,7 +145,8 @@ html {
   color: var(--lgrey);
 }
 .ratenum button:hover {
-  background-color: var(--orange);
+  background-color: var(--lgrey);
+  color: white;
 }
 .ratenum .selected {
   background-color: var(--orange);
@@ -206,4 +208,9 @@ html {
   .thanks {
     width: 90%;
   }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
 }
