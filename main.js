@@ -20,6 +20,6 @@ subbtn.addEventListener("click", () => {
   if (ra == 0) {
     window.alert("Please Select a Rating");
   } else {
-    window.location.href = '/submit.html';
+    window.location.href += '/submit.html';
   }
 });
