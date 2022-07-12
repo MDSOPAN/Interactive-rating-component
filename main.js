@@ -5,7 +5,6 @@ let ra = sessionStorage.getItem("rating") || 0;
     btn[ra - 1].classList.add("selected");
   }
 })();
-console.log(btn);
 btn.forEach((el) => {
   el.addEventListener("click", (ele) => {
     ra = ele.target.innerHTML;
@@ -24,4 +23,4 @@ subbtn.addEventListener("click", () => {
     window.location.href = `${window.location.origin}submit.html`;
   }
 });
-console.log(window.location);
+
