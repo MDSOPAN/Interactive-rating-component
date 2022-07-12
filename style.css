@@ -1,0 +1,209 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --lgrey: hsl(217, 12%, 63%);
+  --mgrey: hsl(216, 12%, 54%);
+  --dblue: hsl(213, 19%, 18%);
+  --vdblue: hsl(216, 12%, 8%);
+  --ldblue: hsl(219, 30%, 25%);
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--vdblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*******************Rate****************/
+.rate {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border-radius: 1rem;
+  width: 55%;
+  /* height: 20em; */
+  background-color: var(--dblue);
+}
+.rate h1 {
+  font-weight: 500;
+}
+.star {
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  background-color: var(--ldblue);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.rate * {
+  margin: 0.2em 0;
+}
+.rate p {
+  color: var(--lgrey);
+  margin: 0.1em;
+}
+.subbtn {
+  background-color: var(--orange);
+  border-radius: 2rem;
+  height: 3rem;
+  width: 100%;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+}
+.subbtn:hover {
+  background-color: white;
+  color: var(--orange);
+}
+.ratenum {
+  display: flex;
+  width: 100%;
+  margin: 1em 0;
+  justify-content: space-between;
+}
+.ratenum button {
+  background-color: var(--ldblue);
+  border: none;
+  margin-bottom: 2em;
+  border-radius: 50%;
+  height: 2.5em;
+  width: 2.5em;
+  color: var(--lgrey);
+}
+.ratenum button:hover {
+  background-color: var(--orange);
+}
+.ratenum .selected {
+  background-color: var(--orange);
+}
+
+@media screen and (max-width: 540px) {
+  .rate {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .rate {
+    width: 100%;
+  }
+}
+/***************************Thank************************************/
+.thanks {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border-radius: 1rem;
+  width: 55%;
+  /* height: 20em; */
+  background-color: var(--dblue);
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.thtext {
+  background-color: var(--ldblue);
+  display: flex;
+  border-radius: 2rem;
+  height: 2rem;
+  width: inherit;
+  font-size: 0.9em;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: var(--orange);
+}
+.thanks * {
+  margin: 0.2em 0;
+}
+.thanks h1 {
+  margin-top: 1em;
+  font-size: 1.7em;
+}
+
+.thanks p:last-of-type {
+  color: var(--lgrey);
+}
+@media screen and (max-width: 540px) {
+  .thanks {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .thanks {
+    width: 90%;
+  }
+}
