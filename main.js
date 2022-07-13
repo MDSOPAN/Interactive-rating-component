@@ -5,6 +5,7 @@ let ra = sessionStorage.getItem("rating") || 0;
     btn[ra - 1].classList.add("selected");
   }
 })();
+console.log(btn);
 btn.forEach((el) => {
   el.addEventListener("click", (ele) => {
     ra = ele.target.innerHTML;
@@ -20,6 +21,6 @@ subbtn.addEventListener("click", () => {
   if (ra == 0) {
     window.alert("Please Select a Rating");
   } else {
-    window.location.href = `${window.location.origin}/Interactive-rating-component/submit.html`;
+    window.location.href = `${window.location.origin}/submit.html`;
   }
 });

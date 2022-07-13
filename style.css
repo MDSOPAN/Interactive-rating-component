@@ -34,7 +34,6 @@ html:focus-within {
 /* Set core body defaults */
 
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -125,10 +124,7 @@ html {
   font-size: 1.2rem;
   color: white;
 }
-.subbtn:hover {
-  background-color: white;
-  color: var(--orange);
-}
+
 .ratenum {
   display: flex;
   width: 100%;
@@ -144,14 +140,30 @@ html {
   width: 2.5em;
   color: var(--lgrey);
 }
-.ratenum button:hover {
-  background-color: var(--lgrey);
-  color: white;
-}
+
 .ratenum .selected {
   background-color: var(--orange);
 }
-
+@media (hover: none) {
+  .ratenum button:active {
+    background-color: var(--lgrey);
+    color: white;
+  }
+  .subbtn:active {
+    background-color: white;
+    color: var(--orange);
+  }
+}
+@media (hover: hover) {
+  .ratenum button:hover {
+    background-color: var(--lgrey);
+    color: white;
+  }
+  .subbtn:hover {
+    background-color: white;
+    color: var(--orange);
+  }
+}
 @media screen and (max-width: 540px) {
   .rate {
     width: 80%;
@@ -206,7 +218,7 @@ html {
 }
 @media screen and (max-width: 360px) {
   .thanks {
-    width: 90%;
+    width: 100%;
   }
 }
 
