@@ -159,6 +159,10 @@ html {
     background-color: var(--lgrey);
     color: white;
   }
+  .ratenum .selected:hover{
+    background-color: white;
+    color: var(--orange);
+  }
   .subbtn:hover {
     background-color: white;
     color: var(--orange);
