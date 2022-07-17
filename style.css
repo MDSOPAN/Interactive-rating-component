@@ -123,7 +123,7 @@ html {
   border: none;
   font-size: 1.2rem;
   color: white;
-  transition: background-color 0.5s,color 0.5s;
+  transition: background-color 0.3s,color 0.3s;
 }
 
 .ratenum {
@@ -135,7 +135,7 @@ html {
 .ratenum button {
   background-color: var(--ldblue);
   border: none;
-  transition: background-color 0.5s;
+  transition: background-color 0.3s;
   margin-bottom: 2em;
   border-radius: 50%;
   height: 2.5em;
@@ -145,6 +145,7 @@ html {
 
 .ratenum .selected {
   background-color: var(--orange);
+  color: white;
 }
 @media (hover: none) {
   .ratenum button:active {
