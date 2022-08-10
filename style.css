@@ -107,10 +107,7 @@ html {
   justify-content: center;
   align-items: center;
 }
-.star img {
-  width: 16em;
-  height: 15em;
-}
+
 .rate * {
   margin: 0.2em 0;
 }
