@@ -107,7 +107,10 @@ html {
   justify-content: center;
   align-items: center;
 }
-
+.star img {
+  width: 16em;
+  height: 15em;
+}
 .rate * {
   margin: 0.2em 0;
 }
@@ -123,7 +126,7 @@ html {
   border: none;
   font-size: 1.2rem;
   color: white;
-  transition: background-color 0.3s,color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .ratenum {
@@ -162,7 +165,7 @@ html {
     background-color: var(--lgrey);
     color: white;
   }
-  .ratenum .selected:hover{
+  .ratenum .selected:hover {
     background-color: white;
     color: var(--orange);
   }
